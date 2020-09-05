@@ -1,3 +1,7 @@
+let y = 0;
+let x = 0;
+let offset = 20;
+let probe;
 function setup() {
   createCanvas(820, 360);
   background("#264653");
@@ -40,7 +44,7 @@ function draw() {
   if (y <= height) {
     probe = random(1);
     strokeWeight(6);
-    stroke(color[floor(random(4))]);
+    stroke(colors[floor(random(4))]);
     if (probe < 0.4) {
       line(x, y, offset + x, y + offset); //-  \
     } else if (probe > 0.4 && probe < 0.9) {
