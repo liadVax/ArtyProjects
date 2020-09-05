@@ -81,12 +81,7 @@ function drawLiad() {
 
 function draw() {
   background("#264653");
-  DebugMousePos();
   drawLiad();
 }
 
-function DebugMousePos() {
-  if (mouseIsPressed) {
-    print(mouseX, mouseY);
-  }
 }
